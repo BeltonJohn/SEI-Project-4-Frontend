@@ -8,31 +8,35 @@ import getMeal from '../api/displaystats';
 function Stats() {
   const [data, setData] = React.useState(null);
   const [total, setTotal] = React.useState(0);
+  const [foods, setFoods] = React.useState([]);
 
   // let carbonTotal = 0;
 
   React.useEffect(() => {
     const getData = async () => {
       const meals = await getMeal();
-      console.log(meals);
-      meals.sort();
-      setData(meals);
-      console.log(meals.items);
+      const foods = meals.map((meal) => meal.items);
+      console.log('MEAL ITEMS', foods);
 
-      meals.items.forEach((item) => {
-        setTotal(total + parseInt(item.carbon_footprint));
-        console.log('total is', item.carbon_footprint);
-      });
+      setData(meals);
+      setFoods(foods);
     };
     getData();
   }, []);
 
-  // if (data) {
-  //   data.forEach((item) => {
-  //     carbonTotal += parseFloat(meals.items.carbon_footprint);
-  //     if (meals.items.carbon_footprint[0])
-  //   })
-  // }
+  React.useEffect(() => {
+    let carbonTotal = 0;
+    if (foods) {
+      console.log('TRYING FOR EACH")', foods);
+      foods.forEach((x) => {
+        x.forEach((y) => {
+          carbonTotal += y.carbon_footprint;
+        });
+      });
+      console.log('CARBON TOTAL', carbonTotal);
+      setTotal(carbonTotal);
+    }
+  }, [foods]);
 
   return <h1>{total}</h1>;
 }

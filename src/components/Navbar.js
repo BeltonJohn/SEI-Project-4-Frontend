@@ -27,6 +27,9 @@ const Navbar = () => {
             <Link to='/create' className='nav-link'>
               Add Entry
             </Link>
+            <Link to='/stats' className='nav-link'>
+              Stats
+            </Link>
 
             <Link
               to='/'
