@@ -1,0 +1,30 @@
+.hero-body {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1631006995557-9866a74ee05c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80');
+  background-size: cover;
+  // z-index: -10;
+  // height: vh100;
+  // width: vw100;
+}
+
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-frontpage {
+  height: 500px;
+  width: 400px;
+  
+  background-image: url('https://res.cloudinary.com/dwzd3yh9s/image/upload/v1650828271/LOGO2_x5kypv.png');
+  background-position: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+ 
+}
+
