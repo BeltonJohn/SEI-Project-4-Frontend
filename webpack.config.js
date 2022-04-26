@@ -44,7 +44,7 @@ module.exports = (webpackEnv) => {
         // ! This tells webpack about express. Any requests to we prefix with /api will get redirected to express!
         '/api': {
           // Our express server. It's not running on https, so it'll be http!
-          target: 'http://localhost:8000',
+          target: 'https://carbon-food-tracker.herokuapp.com',
           // This is for development purposes only, so we aren't too worried about securing our proxy!
           secure: false
         }

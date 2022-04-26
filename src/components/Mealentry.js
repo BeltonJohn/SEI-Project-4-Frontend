@@ -79,10 +79,10 @@ function MealNew() {
               <div className='dropdown-content' name='selectList' id='meatList'>
                 <select onChange={handleSelect}>
                   <option value=''>Please Select</option>
-                  <option value='1'>Beef</option>
-                  <option value='2'>Pork</option>
-                  <option value='3'>Chicken</option>
-                  <option value='4'>Fish</option>
+                  <option value='5'>Beef</option>
+                  <option value='6'>Pork</option>
+                  <option value='7'>Chicken</option>
+                  <option value='8'>Fish</option>
                 </select>
               </div>
             </div>
@@ -94,10 +94,10 @@ function MealNew() {
               <div className='dropdown-content' name='selectList' id='meatList'>
                 <select onChange={handleSelect}>
                   <option value=''>Please Select</option>
-                  <option value='1'>Beef</option>
-                  <option value='2'>Pork</option>
-                  <option value='3'>Chicken</option>
-                  <option value='4'>Fish</option>
+                  <option value='5'>Beef</option>
+                  <option value='6'>Pork</option>
+                  <option value='7'>Chicken</option>
+                  <option value='8'>Fish</option>
                 </select>
               </div>
             </div>

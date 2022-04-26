@@ -3,7 +3,7 @@ import axios from 'axios';
 export const getMeal = async () => {
   const options = {
     method: 'GET',
-    url: 'http://127.0.0.1:8000/meals/',
+    url: 'https://carbon-food-tracker.herokuapp.com/meals/',
 
     headers: {
       authorization: `Bearer ${window.sessionStorage.getItem('token')}`,

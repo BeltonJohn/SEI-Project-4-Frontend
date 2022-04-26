@@ -3,7 +3,7 @@ import axios from 'axios';
 export const registerUser = async (user) => {
   const options = {
     method: 'POST',
-    url: 'http://127.0.0.1:8000/authentication/register/',
+    url: 'https://carbon-food-tracker.herokuapp.com/authentication/register/',
     data: user,
   };
   const { data } = await axios.request(options);
@@ -13,7 +13,7 @@ export const registerUser = async (user) => {
 export const loginUser = async (credentials) => {
   const options = {
     method: 'POST',
-    url: 'http://127.0.0.1:8000/authentication/login/',
+    url: 'https://carbon-food-tracker.herokuapp.com/authentication/login/',
     data: credentials,
   };
 
