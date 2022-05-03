@@ -1,20 +1,31 @@
 .navigator {
-  background-color: black;
+background-color: hsl(0, 0%, 21%);
   opacity: 05;
   height: 50px;
   text-align: center;
-  z-index: 10;
+ 
 
   a {
     color: white;
     text-decoration: none;
   }
+  a:hover {
+    color: green;
+    background-color: hsl(0, 0%, 21%);
+  }
+  a:visited {
+    color: white;
+    background-color: hsl(0, 0%, 21%);
+  }
 
+  
   .nav {
+    background-color: hsl(0, 0%, 21%);
     display: inline;
     display: flex;
     flex-direction: start;
     align-content: center;
+    color: white
   }
 
   .nav-link {
@@ -31,4 +42,19 @@
 
 .fa {
   color: white
+}
+
+.navbar-item {
+  padding-left: 30px;
+  padding-top: 13px;
+}
+
+.navbar-end {
+  padding-right: 35px;
+  padding-top: 12px;
+  padding-left: 10px
+}
+.fontstyling {
+  font-family: 
+  sans-serif
 }

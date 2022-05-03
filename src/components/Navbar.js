@@ -17,42 +17,62 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='navbar-wrapper'>
+    <nav className='navbar-wrapper is-dark'>
       {getLoggedInUserId() ? (
         <div className='navigator'>
           <div className='nav'>
-            <Link to='/' className='nav-link'>
-              Home
+            <Link to='/' className='navbar-item'>
+              <p className='fontstyling'>Home </p>
+              <span className='icon'>
+                <i className='fas fa-home has-text-white'></i>
+              </span>
             </Link>
-            <Link to='/create' className='nav-link'>
-              Add Entry
+            <Link to='/create' className='navbar-item'>
+              <p className='fontstyling'>Add Entry </p>
+              <span className='icon'>
+                <i className='fas fa-plus-circle has-text-white'></i>
+              </span>
             </Link>
-            <Link to='/stats' className='nav-link'>
-              Stats
+            <Link to='/stats' className='navbar-item'>
+              <p className='fontstyling'>Stats </p>
+              <span className='icon'>
+                <i className='fas fa-list-alt has-text-white'></i>
+              </span>
             </Link>
 
             <Link
               to='/'
               id='logout-link'
-              className='nav-link'
+              className='navbar-end'
               onClick={handleLogout}
             >
-              Logout
-              <i className='fa-solid fa-door-open'></i>
+              <p className='fontstyling'>Logout </p>
+              <span className='icon'>
+                <i className='fas fa-solid fa-door-open has-text-white'></i>
+              </span>
             </Link>
           </div>
         </div>
       ) : (
         <div className='navigator'>
           <div className='nav'>
-            <Link to='/' className='nav-link'>
-              Home
+            <Link to='/' className='navbar-item'>
+              <p className='fontstyling'>Home </p>
+              <span className='icon'>
+                <i className='fas fa-home has-text-white'></i>
+              </span>
             </Link>
-            <Link to='/register' className='nav-link'>
-              Register
+            <Link to='/register' className='navbar-item'>
+              <p className='fontstyling'>Register </p>
+              <span className='icon'>
+                <i className='fas fa fa-user-plus has-text-white'></i>
+              </span>
             </Link>
-            <Link to='/login' className='nav-link'>
-              Login
+            <Link to='/login' className='navbar-item'>
+              <p className='fontstyling'>Login </p>
+              <span className='icon'>
+                <i className='fas fa-sign-in-alt has-text-white'></i>
+              </span>
             </Link>
           </div>
         </div>

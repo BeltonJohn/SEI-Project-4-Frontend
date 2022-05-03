@@ -1,16 +1,15 @@
-# README
+Day 1 - I'd come up with an idea that I was excited to build in th Food Carbon Tracker Website. I made some wireframes of the windows which would be included in my website however I was finding it difficult to conceptualise the relationships which would be ncessary in an SQL database. Therefore I drew diagrams of the one to many and many to many relationships in excalidraaw.
 
-## Overview
+Day 2 - I got the basic backend started with Django and pushed it to a newly created github repository and also deployed the project on Heroku. I then completed my secure registration, login and abilty for users to check their own credentials. I tested all of the enpoints using postman, ensuring that the jwt tokens were functionin correctly.
 
-The code in this client folder is our frontend. It's a program that runs independently of our express server, but relies on our express server to work (as our express app is our API).
+Day 3 - I continued to work on the backend and added the abilty for users to upload their own meals by building the models and serializers for meal uploads and also carbon data uploads. In the views.py file for these features I ensured that only the admin user could upload the carbon data and alo only logged in users could post meals. ALthough progress was slow I felt I had gained a deeper understanding of the processes taking place on the backend.
 
-It has a separate package.json, and we can use `npm run serve` to run the frontend (and so now we'll have mongodb, express, AND webpack dev server, all running in separate windows!)
+Day 4 - When doing more extensive testing of the database and API using Postman I realised I had an issue with the API call for getting meal data, which was returning all of the data from all of the users. I therefore also created an extra view that meant only the owner of a particular carbon footprint could access that data. This was a specfic piece of logic I had to write as it was not included under Django's inbuilt 'Generic Views'. I decided to start on my frontend and try to get it talking to my backend. This did not go to plan....
 
-## Differences
+Day 5 - Although I had worked through the console log errors the previous night I still had an issue persisiting into the next day. After having fresh eyes look at the project I realised that it was my error, and the reason I was receiving a 419 HTTP error was because I was trying to register an already existing user. Duh! I then realised I needed to change an enpoint
 
-There are a few key differences in this frontend app.
+Day 6 - I started building the form which users would use to input their meal data. The handlesubmit was buggy and took time to fix. When that was working i realised that the handlechange function on the dropdown also had a bug in which if a user erroneously selected a food it would store that as astring in the array of foods it was being pushed too. THis could lead to duplicates of foods or excess items being pushed in. I therefore spent a long time writing logic to get around this issue.
 
-- Webpack dev server is configured to run on port 8001, so it does not conflict with express
-- Webpack dev server is configured as a proxy server (the proxy part of the config), in order for us to talk to our express API
-- Because it's set up as a proxy, when writing our routes, we DO NOT include the host part. So to get all of our pokemon, instead of the path: 'localhost:8000/api/pokemon' with axios, we'd just do: '/api/pokemon'
-- Both express and mongodb must be running for this to work, as they are now dependencies of this project!
+Day 7 - I worked on styling on the Saunday night of a busy weekend. I added a navbar which showed different things to normal users and logged in users as well as applying th elogo and backgroud images to pages.
+
+Day 8 - On the final day I completed the logic to add up the carbon totals for a users meal and get it displayong on a new page. As the data was very nested it was difficult to access and work with. i inititiaally tried using a forEach loop and although I felt i was getting close to what I needed, from the conole logs I had put in at various points of the fucntion I hit a dead end. I threfore completely change my plan and used data.maps to complete the functions. I deployed my backend to Heroku and my frontend to Netlify.
