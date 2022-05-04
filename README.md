@@ -17,6 +17,8 @@ ECOMO, a portmanteau of 'eco' and the spanish verb meaning 'I eat', is a website
 
 HTML5, SCSS, JavaScript (ES6), React and React extensions, Webpack, NPM, Babel, Postman, Python 3, Django, Heroku, Netlify, Git, GitHub, Excalidraw
 
+### The Process
+
 #### Day 1
 
 I'd come up with an idea that I was excited to build in th Food Carbon Tracker Website. I made some wireframes of the windows which would be included in my website however I was finding it difficult to conceptualise the relationships which would be ncessary in an SQL database. Therefore I drew diagrams of the one to many and many to many relationships in excalidraaw.
@@ -46,3 +48,9 @@ Although I had worked through the console errors the previous night whilst tryin
 I worked on styling on the Saunday night of a busy weekend. I added a navbar which showed different things to normal users and logged in users as well as applying th elogo and backgroud images to pages. On the final day I completed the logic to add up the carbon totals for a users meal and get it displayong on a new page. As the data was very nested it was difficult to access and work with. i inititiaally tried using a forEach loop and although I felt i was getting close to what I needed, from the conole logs I had put in at various points of the fucntion I hit a dead end. I threfore completely change my plan and used data.maps to complete the functions. I deployed my backend to Heroku and my frontend to Netlify.
 
 ![](./src/assets/ecomo.gif)
+
+### Reflections & Additional Future Goals
+
+Due to time constraints the amount of foods that can be input is limited, I don't think beef, butter and bread constitute a healthy diet for the users. Therefore I'd like to add more options. I also originally planeed to be able to input portion sizes and calculate that too however I ran out of time.
+
+I also initially planned to connec this to an existing database of carbon data, however I didn't hear back from the admin staff at this particular website in time. They have since contacted me, therefore i'd like to possibly incorporate this data in future.
