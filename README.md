@@ -21,7 +21,7 @@ HTML5, SCSS, JavaScript (ES6), React and React extensions, Webpack, NPM, Babel, 
 
 I'd come up with an idea that I was excited to build in th Food Carbon Tracker Website. I made some wireframes of the windows which would be included in my website however I was finding it difficult to conceptualise the relationships which would be ncessary in an SQL database. Therefore I drew diagrams of the one to many and many to many relationships in excalidraaw.
 
-![](.src/assets/relationshipmodel.png)
+![](./src/assets/relationshipmodel.png)
 
 #### Day 2
 
@@ -31,9 +31,11 @@ I got the basic backend started with Django and pushed it to a newly created git
 
 I continued to work on the backend and added the abilty for users to upload their own meals by building the models and serializers for meal uploads and also carbon data uploads. In the views.py file for these features I ensured that only the admin user could upload the carbon data and alo only logged in users could post meals. ALthough progress was slow I felt I had gained a deeper understanding of the processes taking place on the backend.
 
-Day 4 - When doing more extensive testing of the database and API using Postman I realised I had an issue with the API call for getting meal data, which was returning all of the data from all of the users. I therefore also created an extra view that meant only the owner of a particular carbon footprint could access that data. This was a specfic piece of logic I had to write as it was not included under Django's inbuilt 'Generic Views'. Once this had been built I was retuning the correct data in postman.
+#### Day 4
 
-![](.src/assets/postman.png)
+When doing more extensive testing of the database and API using Postman I realised I had an issue with the API call for getting meal data, which was returning all of the data from all of the users. I therefore also created an extra view that meant only the owner of a particular carbon footprint could access that data. This was a specfic piece of logic I had to write as it was not included under Django's inbuilt 'Generic Views'. Once this had been built I was retuning the correct data in postman.
+
+![](./src/assets/postman.png)
 
 #### Days 5 & 6
 
