@@ -45,4 +45,4 @@ Although I had worked through the console errors the previous night whilst tryin
 
 I worked on styling on the Saunday night of a busy weekend. I added a navbar which showed different things to normal users and logged in users as well as applying th elogo and backgroud images to pages. On the final day I completed the logic to add up the carbon totals for a users meal and get it displayong on a new page. As the data was very nested it was difficult to access and work with. i inititiaally tried using a forEach loop and although I felt i was getting close to what I needed, from the conole logs I had put in at various points of the fucntion I hit a dead end. I threfore completely change my plan and used data.maps to complete the functions. I deployed my backend to Heroku and my frontend to Netlify.
 
-![](.src/assets/ecomo.gif)
+![](./src/assets/ecomo.gif)
